@@ -1,7 +1,7 @@
 # 列出git的常用命令
-···
+```
 git config --list
-···
+```
 		
 git help 			列出git的帮助命令
 git add?			命令来实现对指定文件的跟踪，然后执行?git commit?提交
