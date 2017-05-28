@@ -34,6 +34,16 @@ git commit
 # 移除文件
 要从Git中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。可以用`git rm`命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。
 
+# 移动文件
+运行`git mv`就相当于运行了下面三条命令：
+```
+mv README.md README
+git rm README.md
+git add README
+```
+如此分开操作，Git也会意识到这是一次改名，所以不管何种方式结果都一样。两者唯一的区别是，`mv`是一条命令而另一种方式需要三条命令，直接用`git mv`轻便得多。
+
+
 提交修改， -m表示注释
 git clone https://github.com/libgit2/libgit2 mylibgit
 克隆资源。 如果后面无名称，会以url末尾路径做资源目录名
