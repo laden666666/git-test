@@ -114,7 +114,7 @@ git checkout testing
 这样 HEAD 就指向 testing 分支了。
 你可以在不同分支间不断地来回切换和工作，并在时机成熟时将它们合并起来。而所有这些工作，你需要的命令只有branch、checkout 和commit。
 
-## 分支的新建与合并
+## 合并分支
 
 
 # 远程仓库操作
